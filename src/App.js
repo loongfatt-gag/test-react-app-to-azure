@@ -1,24 +1,44 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Button from '@material-ui/core/Button';
+import ButtonGroup from '@material-ui/core/ButtonGroup';
+import SaveIcon from '@material-ui/icons/Save';
+import DeleteIcon from '@material-ui/icons/Delete';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Landing Page</h1>
-        <h2>Try Committing</h2>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Welcome</h1>
+        <ButtonGroup>
+          <Button
+            startIcon={<SaveIcon />}
+            endIcon={<SaveIcon />}
+            size="small"
+            style={{
+              fontSize: 12
+            }} 
+            onClick={()=>alert('hello')} 
+            href="#" 
+            variant="contained" 
+            color="primary">
+            Save
+          </Button>
+  
+          <Button
+            startIcon={<DeleteIcon />}
+            endIcon={<DeleteIcon />}
+            size="small"
+            style={{
+              fontSize: 12
+            }} 
+            onClick={()=>alert('hello')} 
+            href="#" 
+            variant="contained" 
+            color="secondary">
+            Discard
+          </Button>
+        </ButtonGroup>
       </header>
     </div>
   );
