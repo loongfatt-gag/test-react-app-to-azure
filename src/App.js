@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Products from './pages/Projucts';
 import Reports from './pages/Reports';
+import Support from './pages/Support';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path='/' exact component={Home} />
           <Route path='/products' component={Products} />
           <Route path='/reports' component={Reports} />
+          <Route path='/support' component={Support} />
         </Switch>
       </Router>
     </>
