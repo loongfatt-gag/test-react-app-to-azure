@@ -54,16 +54,16 @@ function App() {
         </Typography>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6} md={4}>
-            Step 1
+            Step 1 - Setup Git Repository
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
-            Step 2
+            Step 2 - Create Azure Static Web App
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
-            Step 3
+            Step 3 - Link the Git Repository to Azure Static Web App
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
-            Step 4
+            Step 4 - Allow Github Acitons to push to Azure Static Web App
           </Grid>
         </Grid>
       </Container>
