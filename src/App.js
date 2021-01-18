@@ -1,5 +1,6 @@
 import React from 'react';
-import Navbar from './components/NavBar';
+// import Navbar from './components/NavBar';
+import ButtonAppBar from './components/ButtonAppBar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Products from './pages/Projucts';
@@ -10,7 +11,8 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar />
+        <ButtonAppBar />
+        
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/products' component={Products} />
