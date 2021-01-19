@@ -1,26 +1,23 @@
 import React from 'react';
+import { Container } from '@material-ui/core';
+import MainSwitch from './components/MainSwitch';
+
 // import Navbar from './components/NavBar';
-import ButtonAppBar from './components/ButtonAppBar';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Products from './pages/Projucts';
-import Reports from './pages/Reports';
-import Support from './pages/Support';
+// import ButtonAppBar from './layout/ButtonAppBar';
+import ButtonAppBarTempDrawer from './layout/ButtonAppBarTempDrawer';
+// import TempDrawer from './layout/TempDrawer';
+
+
 
 function App() {
   return (
-    <>
-      <Router>
-        <ButtonAppBar />
-        
-        <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/products' component={Products} />
-          <Route path='/reports' component={Reports} />
-          <Route path='/support' component={Support} />
-        </Switch>
-      </Router>
-    </>
+    <React.Fragment>
+      <ButtonAppBarTempDrawer />
+      <Container>
+        <div className="page-content" />
+        <MainSwitch />
+      </Container>
+    </React.Fragment>
   );
 }
 

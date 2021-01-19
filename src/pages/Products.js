@@ -13,18 +13,18 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-function Support() {
+function Products() {
     const classes = useStyles();
     return (
         <Container maxWidth="lg" style={{ height: '20vh' }}>
             <div className={classes.root}>
                 <Typography component="div" className={classes.herotext} variant="h3" align="center">
-                    Support
+                    Products
                 </Typography>  
             </div>
         </Container>
     )
 }
 
-export default Support;
+export default Products;
 
