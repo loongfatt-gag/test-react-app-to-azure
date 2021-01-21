@@ -5,6 +5,7 @@ import Home from '../pages/Home';
 import Products from '../pages/Products';
 import Reports from '../pages/Reports';
 import Support from '../pages/Support';
+import Contact from '../pages/Contact';
 import PageNotFound from '../pages/PageNotFound';
 
 const MainSwitch = () => (
@@ -13,6 +14,7 @@ const MainSwitch = () => (
         <Route path="/products" component={Products} />
         <Route path="/reports" component={Reports} />
         <Route path="/support" component={Support} />
+        <Route path="/contact" component={Contact} />
         <Route path="*" component={PageNotFound} />
     </Switch>
 )

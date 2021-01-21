@@ -2,6 +2,7 @@ import React from 'react';
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import * as IoIcons from 'react-icons/io';
+import PermContactCalendarIcon from '@material-ui/icons/PermContactCalendar';
 
 export const SidebarData = [
     {
@@ -44,6 +45,13 @@ export const SidebarData = [
         sidebarName: 'Support',
         path: '/support',
         icon: <IoIcons.IoMdHelpCircle />,
+        cName: 'nav-text'
+    },
+    {
+        id: 7,
+        sidebarName: 'Contact',
+        path: '/contact',
+        icon: <PermContactCalendarIcon />,
         cName: 'nav-text'
     },
 ]

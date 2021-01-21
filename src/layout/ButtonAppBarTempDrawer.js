@@ -72,7 +72,9 @@ export default function ButtonAppBar() {
                     <Typography variant="h6" className={classes.title}>
                         <Link to='/' className={classes.link}>Azure Static Web App</Link>
                     </Typography>
-                    <Button color="inherit">Contact</Button>
+                    <Button color="inherit">
+                        <Link to='/contact' className={classes.link}>Contact Us</Link>
+                    </Button>
                 </Toolbar>
             </AppBar>
             <nav className={classes.drawer} aria-label="mailbox folders">
