@@ -22,7 +22,7 @@ function Home() {
             <CustomHero />
             <div className={classes.root}>
                 <Typography component="div" className={classes.herotext} variant="h3" align="center">
-                    Home
+                     Home with changes
                 </Typography>  
             </div>
         </Container>
