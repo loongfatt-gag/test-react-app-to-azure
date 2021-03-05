@@ -3,6 +3,8 @@ import React from 'react';
 import { Typography, Container } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
+import CustomHero from '../components/CustomHero';
+
 const useStyles = makeStyles(theme => ({
     root: {
         padding: "10px"
@@ -17,6 +19,7 @@ function Home() {
     const classes = useStyles();
     return (
         <Container maxWidth="lg" style={{ height: '20vh' }}>
+            <CustomHero />
             <div className={classes.root}>
                 <Typography component="div" className={classes.herotext} variant="h3" align="center">
                     Home
