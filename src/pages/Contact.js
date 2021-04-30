@@ -38,7 +38,7 @@ function Contact() {
         <Container maxWidth="lg" style={{ height: '20vh' }}>
             <div className={classes.root}>
                 <Typography component="div" className={classes.herotext} variant="h3" align="center">
-                    Contact
+                    Contact Testing
                 </Typography>
                 <form onSubmit={sendEmail}>
                     <TextField fullWidth label="Subject" name="subject" size="small" variant="outlined" />
